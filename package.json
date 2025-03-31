@@ -46,7 +46,7 @@
     "jest": "^29.7.0",
     "n3": "^1.24.2",
     "pre-commit": "^1.2.2",
-    "rdf-isomorphic": "^1.0.0",
+    "rdf-isomorphic": "^2.0.1",
     "rdf-parse": "^1.1.0",
     "semantic-release": "^24.2.3",
     "ts-jest": "^29.3.1",
