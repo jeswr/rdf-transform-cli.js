@@ -1,9 +1,12 @@
 {
-  "name": "@jeswr/rdf-transform-cli.js",
+  "name": "rdf-transform-cli",
   "version": "0.0.0-development",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "bin": {
+    "rdf-transform-cli": "./dist/cli.js"
+  },
   "directories": {
     "lib": "lib"
   },
@@ -32,14 +35,19 @@
   },
   "homepage": "https://github.com/jeswr/rdf-transform-cli.js/README.md",
   "devDependencies": {
+    "@rdfjs/types": "^1.1.0",
     "@types/jest": "^29.5.14",
+    "@types/n3": "^1.24.2",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.31.0",
     "jest": "^29.7.0",
+    "n3": "^1.24.2",
     "pre-commit": "^1.2.2",
+    "rdf-isomorphic": "^1.0.0",
+    "rdf-parse": "^1.1.0",
     "semantic-release": "^24.2.3",
     "ts-jest": "^29.3.1",
     "typescript": "^5.8.2"
@@ -83,5 +91,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "rdf-transform": "^1.2.2"
   }
 }
