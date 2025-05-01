@@ -94,6 +94,6 @@
   },
   "dependencies": {
     "commander": "^13.1.0",
-    "rdf-transform": "^1.2.2"
+    "rdf-transform": "^1.3.0"
   }
 }
