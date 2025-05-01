@@ -14,6 +14,7 @@ program
   .option('-t, --to <format>', 'Output format (e.g., ttl, n3, jsonld)')
   .option('--base-iri <iri>', 'Base IRI for parsing')
   .option('--force', 'Force transformation even if formats are compatible')
+  .option('--pretty, -p', 'Pretty print the output', false)
   .action(async (input: string, output: string | undefined, options: any) => {
     try {
       const transformOptions: TransformOptions = {
@@ -21,6 +22,7 @@ program
         to: { path: output || '', contentType: options.to },
         baseIRI: options.baseIri,
         forceTransform: options.force,
+        pretty: options.pretty,
       };
 
       const inputStream = createReadStream(input);
